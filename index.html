@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Sistema de Atendimento</h1>
+
+    <div class="buttons">
+      <button id="btnNormal">Senha Normal</button>
+      <button id="btnPreferencial" class="priority">Preferencial</button>
+      <button id="btnReset" class="reset">Zerar Filas</button>
+    </div>
+
+    <div class="painel">
+      <h2>Senha Atual</h2>
+      <div id="senhaAtual">---</div>
+    </div>
+
+    <div class="listas">
+
+      <div>
+        <h3>Fila Normal</h3>
+        <ul id="filaNormal"></ul>
+      </div>
+
+      <div>
+        <h3>Fila Preferencial</h3>
+        <ul id="filaPreferencial"></ul>
+      </div>
+
+    </div>
+
+    <div class="historico">
+      <h3>Histórico</h3>
+      <ul id="historico"></ul>
+    </div>
+
+  </div>
+
+  <audio id="beep" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
